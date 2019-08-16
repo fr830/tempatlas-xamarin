@@ -66,13 +66,14 @@ namespace TempAtlas.Droid
 
         public Position GetPosition()
         {
-            if (sLocationManager.IsLocationEnabled && sProvider != null)
+            Position defaultPos = new Position(43.08291577840266, -77.6772236820356);
+			if (sLocationManager.IsLocationEnabled && sProvider != null)
             {
                 Location last = sLocationManager.GetLastKnownLocation(sProvider);
-                return new Position(last.Latitude, last.Longitude);
+                return last != null ? new Position(last.Latitude, last.Longitude) : defaultPos;
             }
-            return new Position(43.08291577840266, -77.6772236820356);
-        }
+			return defaultPos;
+		}
 
         public void StopUpdating()
         {
@@ -81,10 +82,13 @@ namespace TempAtlas.Droid
 
         public void OnLocationChanged(Location location)
         {
-            Position newPos = new Position(location.Latitude, location.Longitude);
-            PositionUpdatedArgs args = new PositionUpdatedArgs();
-            args.position = newPos;
-            OnPositionUpdated(args);
+			if (location != null)
+			{
+				Position newPos = new Position(location.Latitude, location.Longitude);
+				PositionUpdatedArgs args = new PositionUpdatedArgs();
+				args.position = newPos;
+				OnPositionUpdated(args);
+			}
         }
 
         public void OnProviderDisabled(string provider)
