@@ -28,7 +28,7 @@ namespace TempAtlas.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             Xamarin.FormsMaps.Init();
-            Xamarin.FormsGoogleMaps.Init("AIzaSyDtGDEvOrxW8Dsq_JXHjeXVsljABH6nTUw");
+            Xamarin.FormsGoogleMaps.Init("API_KEY");
 
             LoadApplication(new App());
 
