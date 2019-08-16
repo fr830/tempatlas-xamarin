@@ -44,12 +44,13 @@ namespace TempAtlas.iOS
 
         public Position GetPosition()
         {
+            Position defaultPos = new Position(43.08291577840266, -77.6772236820356);
             if (CLLocationManager.LocationServicesEnabled && isAuthorized(CLLocationManager.Status))
             {
                 CLLocation current = locationManager.Location;
-                return new Position(current.Coordinate.Latitude, current.Coordinate.Longitude);
+                return current != null ? new Position(current.Coordinate.Latitude, current.Coordinate.Longitude) : defaultPos;
             }
-            return new Position(43.08291577840266, -77.6772236820356);
+            return defaultPos;
         }
 
         protected virtual void OnPositionUpdated(PositionUpdatedArgs e)
