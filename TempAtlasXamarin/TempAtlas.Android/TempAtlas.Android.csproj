@@ -99,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TempAtlas\TempAtlas.csproj">
-      <Project>{D29117CD-6D88-40FE-8CA6-1695CFB0819E}</Project>
+      <Project>{5F982793-CC41-429F-A27B-520DE23755D6}</Project>
       <Name>TempAtlas</Name>
     </ProjectReference>
   </ItemGroup>
