@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{C7B018B8-44E8-4271-AB01-331A4320FC99}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TempAtlas/MainPage.xaml">
+    <Files>
+      <File FileName="TempAtlas/MainPage.xaml" Line="33" Column="49" />
+      <File FileName="TempAtlas/MainPage.xaml.cs" />
+      <File FileName="TempAtlas/WeatherAPI.cs" />
+      <File FileName="TempAtlas/FavoritesModal.xaml.cs" />
+      <File FileName="TempAtlas/App.xaml.cs" />
+      <File FileName="TempAtlas.iOS/LocationManager.cs" />
+      <File FileName="TempAtlas.Android/LocationManager.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TempAtlas" expanded="True">
+            <Node name="TempAtlas" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="FavoritesModal.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+            </Node>
+            <Node name="TempAtlas.Android" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="TempAtlas.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TempAtlas.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TempAtlas.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B3D02B7C-4AAB-46B4-9CF4-10042262D1E4" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/justinhatin/Documents/Innovation/tempatlas-xamarin/TempAtlasXamarin/TempAtlas/MainPage.xaml.cs" relfile="TempAtlas/MainPage.xaml.cs" line="42" column="1" />
+      <Breakpoint enabled="false" file="/Users/justinhatin/Documents/Innovation/tempatlas-xamarin/TempAtlasXamarin/TempAtlas/MainPage.xaml.cs" relfile="TempAtlas/MainPage.xaml.cs" line="48" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

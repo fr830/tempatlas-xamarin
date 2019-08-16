@@ -1,0 +1,14 @@
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/bin/Debug/netstandard2.0/TempAtlas.deps.json
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/bin/Debug/netstandard2.0/TempAtlas.dll
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/bin/Debug/netstandard2.0/ref/TempAtlas.dll
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/bin/Debug/netstandard2.0/TempAtlas.pdb
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/FavoritesModal.xaml.g.cs
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/TempAtlas.csproj.CoreCompileInputs.cache
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/TempAtlas.AssemblyInfoInputs.cache
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/TempAtlas.AssemblyInfo.cs
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/TempAtlas.dll
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/ref/TempAtlas.dll
+/Users/justinhatin/Documents/Innovation/TempAtlas/TempAtlas/obj/Debug/netstandard2.0/TempAtlas.pdb

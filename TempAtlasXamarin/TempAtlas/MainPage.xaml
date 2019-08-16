@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps" 
+             Title="TempAtlas" x:Class="TempAtlas.MainPage">
+    <StackLayout x:Name="mainStack" Spacing="0">
+        <SearchBar x:Name="searchBar"
+            Placeholder="Enter city name"
+            Focused="OnSearchBarFocused"
+            SearchButtonPressed="OnSearchPressed" />
+        <maps:Map x:Name="map"
+                  MapClicked="OnMapTapped"
+                  InputTransparent="false"                             
+                  MapType="Hybrid" />
+        <Grid ColumnSpacing="20" Padding="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Enable Metric Units:"
+                   Grid.Column="0"
+                   YAlign="Center"/>
+            <Switch x:Name="unitsSwitch"
+                    Grid.Column="2"
+                    IsToggled="false"
+                    Toggled="OnSwitchToggled" />
+        </Grid>
+        <Grid x:Name="forecastInfo"
+            Opacity="0"
+            RowSpacing="8"
+            Padding="8, 0, 8, 8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="*" />                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Text="Forecast" 
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"/>
+            <Label Text="Location:"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Label Text="Conditions:"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+            <Label Text="High:"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+            <Label Text="Low:"
+                   Grid.Row="4"
+                   Grid.Column="0"/>
+            <Label Text="Humidity:"
+                   Grid.Row="5"
+                   Grid.Column="0"/>
+            <Label Text="Wind Speed:"
+                   Grid.Row="6"
+                   Grid.Column="0"/>
+            <Label Text="Cloud Cover:"
+                   Grid.Row="7"
+                   Grid.Column="0"/>
+            <Label x:Name="locationLabel" Text=""
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+            <Label x:Name="conditionsLabel" Text=""
+                   Grid.Row="2"
+                   Grid.Column="1"/>
+            <Label x:Name="highLabel" Text=""
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+            <Label x:Name="lowLabel" Text=""
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+            <Label x:Name="humidityLabel" Text=""
+                   Grid.Row="5"
+                   Grid.Column="1"/>
+            <Label x:Name="windSpeedLabel" Text=""
+                   Grid.Row="6"
+                   Grid.Column="1"/>
+            <Label x:Name="cloudCoverLabel" Text=""
+                   Grid.Row="7"
+                   Grid.Column="1"/>
+            <Button x:Name="favoriteButton"
+                    Grid.Row="8"          
+                    HorizontalOptions="Start"
+                    Text="Add to Favorites"
+                    Clicked="OnFavoriteClicked" />
+        </Grid>
+        <Button x:Name="seeAllButton"
+                Text="See All Favorites"
+                Clicked="OnSeeFavoritesClicked" />
+    </StackLayout>
+</ContentPage>
