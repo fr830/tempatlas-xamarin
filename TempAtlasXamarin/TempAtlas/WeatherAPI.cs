@@ -31,7 +31,7 @@ namespace TempAtlas
         public Units units = Units.imperial;
 
         private readonly string baseApiUrl = "https://api.openweathermap.org/data/2.5/weather?";
-        private readonly string appId = "&APPID=f286e2990fed460a17964af2d80b3c60";
+        private readonly string appId = "&APPID=YOUR_APP_ID_HERE";
         
         public async Task<WeatherResponse> GetWeatherByCity(string city)
         {
